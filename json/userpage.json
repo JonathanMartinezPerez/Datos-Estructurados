@@ -1,0 +1,60 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Organization",
+    "name": "ParkEase",
+    "email": "parkease@gmail.com",
+    "telephone": "922 45 32 45",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/1200px-Parking_icon.svg.png",
+    "@type" : "ProfilePage",
+    "mainEntity" : {
+        "@type" : "Person",
+        "name" : "Jane Doe",
+        "givenName" : "Jane",
+        "familyName" : "Doe",
+        "email" : "jdoe@examplelaw.com",
+        "telephone" : "9195555555",
+        "jobTitle" : "Partner",
+        "image" : "https://www.examplelaw.com/wp-content/examplelaw/2018/02/jane-doe.jpg",
+        "url" : "https://www.examplelaw.com/attorney/jane-doe/",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Example Law Firm",
+            "url": "https://www.examplelaw.com/",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Raleigh",
+                "addressRegion": "NC",
+                "postalCode": "27604",
+                "streetAddress": "100 Main Street, Suite 201",
+                "addressCountry": "USA"
+            }
+        },
+        "gender": "female",
+        "alumniOf": [
+            {
+                "@type" : "CollegeOrUniversity",
+                "name" : "University of North Carolina at Chapel Hill"
+            },
+            {
+                "@type" : "CollegeOrUniversity",
+                "name" : "University of North Carolina School of Law"
+            }
+        ],
+        "memberOf": [
+            "North Carolina State Bar",
+            "Wake County Bar",
+            "North Carolina Board Certified Family Law Specialist",
+            "Certified Parenting Coordinator",
+            "NCDRC Certified Family Financial Mediator"
+        ],
+        "award": [
+            "North Carolina Super Lawyers, Rising Star 2018",
+            "Business Leader Magazine, North Carolina Top Family Lawyer"
+        ],
+        "sameAs": [
+            "https://www.facebook.com/JaneDoeAttorney/",
+            "https://www.linkedin.com/in/jane-doe-attorney",
+            "https://twitter.com/janedoeattorney"
+        ]
+    }
+  }
