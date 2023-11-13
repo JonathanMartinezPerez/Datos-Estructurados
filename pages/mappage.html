@@ -14,21 +14,18 @@
         "url": "https://www.parkease.com",
         "email": "parkease@gmail.com",
         "telephone": "922 45 32 45",
-        "profile":{
-          "@type" : "Person",
-          "name" : "Jonathan Martínez",
-          "givenName" : "Jonathan",
-          "familyName" : "Martínez",
-          "email" : "jmp@parkease.com",
-          "telephone" : "9195555555"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Santa Cruz de Tenerife",
-          "addressRegion": "La Laguna",
-          "postalCode": "35602",
-          "streetAddress": "Calle Parque de la Reina, 12",
-          "addressCountry": "ES"
+        "mainEntity": {
+            "@type": "Map",
+            "name": "Mapa Interactivo de Aparcamientos",
+            "description": "Explora los aparcamientos disponibles en la ciudad.",
+            "url": "https://www.ejemplo.com/mapa-aparcamientos",
+            "image": "https://www.ejemplo.com/images/mapa-aparcamientos.png",
+            "mapType": "https://schema.org/ParkingFacility",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 37.7749,
+              "longitude": -122.4194
+            }
         },
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/1200px-Parking_icon.svg.png"
       }
@@ -50,9 +47,9 @@
     </nav>
     <section>
       <!-- Primera seccion -->
-      <h2> User Info </h2>
+      <h2> Aparcamientos cerca según su ubicación </h2>
       <article>
-        <h3> User </h3>
+        <h3> Mapa interactivo </h3>
         <p>  Lista de informacion </p>
       </article>
     </section>
