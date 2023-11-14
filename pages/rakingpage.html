@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="title" content="Datos estructurados">
+    <meta name="description" content="Práctica datos estructurados">
+    <meta name="keywords" content="HTML5, CSS">
+    <title>Main Page</title>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Organization",
+          "url": "https://www.parkease.com",
+          "name": "ParkEase",
+          "email": "parkease@gmail.com",
+          "telephone": "922 45 32 45",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/1200px-Parking_icon.svg.png"
+        }
+      </script>      
+  </head>
+  <body>
+    <!-- Etiqueta para la cabecera -->
+    <header>
+      <h1>ParkEase</h1>
+      <!-- Aquí iria el login/register - perfil -->
+    </header>
+    <!-- Menu de navegaciíon -->
+    <nav>
+      <ul>
+        <li> Inicio </li>
+        <li> Aparcamiento </li>
+        <li> Ranking </li>
+      </ul>
+    </nav>
+    <section>
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "ItemList",
+          "name": "Mejores Parkings",
+          "itemListOrder": "http://schema.org/ItemListOrderDescending",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "ParkingFacility",
+                "name": "Parking Ejemplo 1",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": 4.8,
+                  "reviewCount": 25
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "28.482835",  
+                  "longitude": "-16.321985"
+                },
+                "review": [
+                  {
+                    "@type": "Review",
+                    "author": {
+                      "@type": "Person",
+                      "name": "Usuario 1"
+                    },
+                    "reviewBody": "Excelente servicio. Fácil acceso y buena seguridad.",
+                    "reviewRating": {
+                      "@type": "Rating",
+                      "ratingValue": 5
+                    }
+                  }                ]
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "ParkingFacility",
+                "name": "Parking Ejemplo 2",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": 4.5,
+                  "reviewCount": 18
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "25.482835",  
+                  "longitude": "-18.321985"
+                },
+                "review": [
+                  {
+                    "@type": "Review",
+                    "author": {
+                      "@type": "Person",
+                      "name": "Usuario 2"
+                    },
+                    "reviewBody": "Buen servicio, aunque un poco caro.",
+                    "reviewRating": {
+                      "@type": "Rating",
+                      "ratingValue": 4
+                    }
+                  }                ]
+              }
+            }          ]
+        }
+      </script>
+      <!-- Primera seccion -->
+      <h2> Clasificación de mejores aparcamentos </h2>
+      <article>
+        <h3> Parking LL </h3>
+        <p> Rating e información del mismo </p>
+      </article>
+    </section>
+    <!-- Cierre de la pagina -->
+    <footer>
+      <p> Información de contacto </p>
+    </footer>
+  </body>
+</html>
