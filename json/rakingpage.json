@@ -25,7 +25,7 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "28.482835",  
+          "latitude": "28.482835",
           "longitude": "-16.321985"
         },
         "review": [
@@ -40,7 +40,8 @@
               "@type": "Rating",
               "ratingValue": 5
             }
-          }                ]
+          }
+        ]
       }
     },
     {
@@ -54,8 +55,6 @@
           "ratingValue": 4.0,
           "reviewCount": 15
         },
-        "@type": "ParkingFacility",
-        "name": "Parking Física",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Av. Astrofisico Francisco Sánchez, S/N",
@@ -66,7 +65,7 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "25.482835",  
+          "latitude": "25.482835",
           "longitude": "-18.321985"
         },
         "review": [
@@ -81,7 +80,9 @@
               "@type": "Rating",
               "ratingValue": 4
             }
-          }                ]
+          }
+        ]
       }
-    }          ]
+    }
+  ]
 }
