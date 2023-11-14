@@ -1,29 +1,54 @@
 {
   "@context": "http://schema.org",
-  "@type": "Place",
-  "name": "Parking ESIT",
-  "description": "Parking universitario ubicado en la ESIT.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Astrofisico Francisco Sánchez, 10",
-    "addressLocality": "San Cristobal de La Laguna",
-    "addressRegion": "Santa Cruz de Tenerife",
-    "postalCode": "38206",
-    "addressCountry": "Spain"
-  },
+  "@type": "Map",
+  "name": "Mapa Interactivo de Parkings",
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "28.482835",  
-    "longitude": "-16.321985"
+    "latitude": "VALOR_LATITUD_INICIAL",  
+    "longitude": "VALOR_LONGITUD_INICIAL" 
   },
-  "hasMap": {
-    "@type": "Map",
-    "name": "Mapa interactivo del Parking",
-    "url": "https://www.google.es/maps/place/Aparcamiento,+Av.+Astrofisico+Francisco+S%C3%A1nchez,+10,+38206+La+Laguna,+Santa+Cruz+de+Tenerife/@28.4820773,-16.3201046,737m/data=!3m1!1e3!4m6!3m5!1s0xc41cdbdec2d1581:0x6d54d868ff52488d!8m2!3d28.4818295!4d-16.3221818!16s%2Fg%2F11b8vf8dzx?entry=ttu",
-    "interactionStatistic": {
-      "@type": "InteractionCounter",
-      "interactionType": "http://schema.org/InteractAction",
-      "userInteractionCount": "5"
+  "mapType": "http://schema.org/Map",
+  "marker": [
+    {
+      "@type": "ParkingFacility",
+      "name": "Parking ESIT",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Astrofisico Francisco Sánchez, 10",
+        "addressLocality": "San Cristobal de La Laguna",
+        "addressRegion": "Santa Cruz de Tenerife",
+        "postalCode": "38206",
+        "addressCountry": "Spain"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.482835",  
+        "longitude": "-16.321985"
+      },
+      "description": "Información detallada",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.5,
+        "reviewCount": 20
+      }
+    },
+    {
+      "@type": "ParkingFacility",
+      "name": "Parking Física",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Astrofisico Francisco Sánchez, S/N",
+        "addressLocality": "San Cristobal de La Laguna",
+        "addressRegion": "Santa Cruz de Tenerife",
+        "postalCode": "38206",
+        "addressCountry": "Spain"
+      },
+      "description": "Información detallada",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.0,
+        "reviewCount": 15
+      }
     }
-  }
+  ]
 }
