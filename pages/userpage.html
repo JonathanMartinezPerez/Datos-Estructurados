@@ -5,16 +5,31 @@
     <meta name="title" content="Datos estructurados">
     <meta name="description" content="Práctica datos estructurados">
     <meta name="keywords" content="HTML5, CSS">
-    <title>Main Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>ParkEase: Profile</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org/",
-        "@type": "Organization",
-        "name": "ParkEase",
-        "url": "https://www.parkease.com",
-        "email": "parkease@gmail.com",
-        "telephone": "922 45 32 45",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/1200px-Parking_icon.svg.png"
+        "@type" : "Person",
+        "name" : "Jonathan Martínez",
+        "givenName" : "Jonathan",
+        "familyName" : "Martínez",
+        "email" : "jmp@parkease.com",
+        "telephone" : "9195555555",
+        "description": "Usuario activo en la aplicación de valoración de parkings. ¡Comparto mis experiencias para ayudar a otros usuarios a encontrar los mejores parkings!",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santa Cruz de Tenerife",
+          "addressRegion": "La Laguna",
+          "postalCode": "35602",
+          "streetAddress": "Calle Parque de la Reina, 12",
+          "addressCountry": "ES"
+        },
+        "mainEntityOfPage": {
+          "@type": "ProfilePage",
+          "@id": "URL del perfil del usuario"
+        }
       }
     </script>
   </head>
@@ -22,102 +37,40 @@
     <!-- Etiqueta para la cabecera -->
     <header>
       <h1>ParkEase</h1>
-      <!-- Aquí iria el login/register - perfil -->
+      <nav class="navigation">
+        <ul class="nav-menu">
+          <li><a href="../pages/index.html">Inicio</a></li>
+          <li><a href="../pages/mappage.html">Mapa</a></li>
+          <li><a href="../pages/rakingpage.html">Ranking</a></li>
+        </ul>
+        <a href="../pages/userpage.html" class="user-icon">Usuario</a>
+      </nav>
     </header>
-    <!-- Menu de navegaciíon -->
-    <nav>
-      <ul>
-        <li> Inicio </li>
-        <li> Aparcamiento </li>
-        <li> Ranking </li>
-      </ul>
-    </nav>
-    <section>
-      <script type="application/ld+json">
-        {
-          "@type" : "Person",
-          "name" : "Jonathan Martínez",
-          "givenName" : "Jonathan",
-          "familyName" : "Martínez",
-          "email" : "jmp@parkease.com",
-          "telephone" : "9195555555",
-          "description": "Usuario activo en la aplicación de valoración de parkings. ¡Comparto mis experiencias para ayudar a otros usuarios a encontrar los mejores parkings!",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Santa Cruz de Tenerife",
-            "addressRegion": "La Laguna",
-            "postalCode": "35602",
-            "streetAddress": "Calle Parque de la Reina, 12",
-            "addressCountry": "ES"
-          },
-          "mainEntityOfPage": {
-            "@type": "ProfilePage",
-            "@id": "URL del perfil del usuario"
-          },
-          "review": [
-            {
-              "@type": "Review",
-              "itemReviewed": {
-                "@type": "ParkingFacility",
-                "name": "Parking ESIT",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Av. Astrofisico Francisco Sánchez, 10",
-                  "addressLocality": "San Cristobal de La Laguna",
-                  "addressRegion": "Santa Cruz de Tenerife",
-                  "postalCode": "38206",
-                  "addressCountry": "Spain"
-                },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": "28.482835",  
-                  "longitude": "-16.321985"
-                }
-              },
-              "reviewBody": "Excelente ubicación y servicio. Muy recomendado.",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": 5
-              }
-            },
-            {
-              "@type": "Review",
-              "itemReviewed": {
-                "@type": "ParkingFacility",
-                "name": "Parking Física",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Av. Astrofisico Francisco Sánchez, S/N",
-                  "addressLocality": "San Cristobal de La Laguna",
-                  "addressRegion": "Santa Cruz de Tenerife",
-                  "postalCode": "38206",
-                  "addressCountry": "Spain"
-                },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": "28.482835",  
-                  "longitude": "-16.321985"
-                }
-              },
-              "reviewBody": "Entrada/salida de doble sentido con poca visibilidad.",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": 2
-              }
-            }         
-          ]
-        }
-      </script>
-      <!-- Primera seccion -->
-      <h2> Perfil del usuario </h2>
-      <article>
-        <h3> User </h3>
-        <p>  Lista de informacion </p>
-      </article>
-    </section>
-    <!-- Cierre de la pagina -->
+    <main>
+      <section>
+        <!-- Título -->
+        <section class="row center-align">
+          <div class="intro col s12">
+            <div class="intro-text">
+              <h2> Perfil del usuario </h2>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <!-- Sección 1: Mapa -->
+          <section class="row about">
+            <div class="about-text col s12 m6">
+              <h2> User </h2>
+              <p>  Lista de informacion </p>        
+            </div>
+          </section>
+        </div>        
+      </section>
+    </main>
+    <!-- Cierre de la página -->
     <footer>
-      <p> Información de contacto </p>
+      <p>Contáctanos: ejemplo@parkease.com | Teléfono: 123-456-7890</p>
     </footer>
   </body>
 </html>

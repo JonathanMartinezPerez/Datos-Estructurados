@@ -5,16 +5,33 @@
     <meta name="title" content="Datos estructurados">
     <meta name="description" content="Práctica datos estructurados">
     <meta name="keywords" content="HTML5, CSS">
-    <title>Main Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>ParkEase: Mapa</title>
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org/",
-        "@type": "Organization",
-        "name": "ParkEase",
-        "url": "https://www.parkease.com",
-        "email": "parkease@gmail.com",
-        "telephone": "922 45 32 45",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/1200px-Parking_icon.svg.png"
+        "@context": "http://schema.org",
+        "@type": "ParkingFacility",
+        "name": "Parking Seleccionado",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "28.482835",
+          "longitude": "-16.321985"
+        },
+        "description": "Información detallada",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "bestRating": "5",
+          "ratingCount": "20"
+        },
+        "hasMap": {
+          "@type": "Map",
+          "name": "Mapa Interactivo de Parkings",
+          "mapType": "http://schema.org/Map",
+          "url": "https://www.ejemplo.com/mapa-aparcamientos",
+          "image": "https://www.ejemplo.com/images/mapa-aparcamientos.png"
+        }
       }
     </script>
   </head>
@@ -22,87 +39,42 @@
     <!-- Etiqueta para la cabecera -->
     <header>
       <h1>ParkEase</h1>
-      <!-- Aquí iria el login/register - perfil -->
+      <nav class="navigation">
+        <ul class="nav-menu">
+          <li><a href="../pages/index.html">Inicio</a></li>
+          <li><a href="../pages/mappage.html">Mapa</a></li>
+          <li><a href="../pages/rakingpage.html">Ranking</a></li>
+        </ul>
+        <a href="../pages/userpage.html" class="user-icon">Usuario</a>
+      </nav>
     </header>
-    <!-- Menu de navegaciíon -->
-    <nav>
-      <ul>
-        <li> Inicio </li>
-        <li> Aparcamiento </li>
-        <li> Ranking </li>
-      </ul>
-    </nav>
-    <section>
-      <script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "Place",
-          "name": "Mapa Interactivo de Parkings",
-          "hasMap": {
-            "@type": "Map",
-            "name": "Mapa Interactivo de Parkings",
-            "mapType": "http://schema.org/Map",
-            "containsPlace": [
-              {
-                "@type": "ParkingFacility",
-                "name": "Parking ESIT",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Av. Astrofisico Francisco Sánchez, 10",
-                  "addressLocality": "San Cristobal de La Laguna",
-                  "addressRegion": "Santa Cruz de Tenerife",
-                  "postalCode": "38206",
-                  "addressCountry": "Spain"
-                },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": "28.482835",
-                  "longitude": "-16.321985"
-                },
-                "description": "Información detallada",
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": 4.5,
-                  "reviewCount": 20
-                }
-              },
-              {
-                "@type": "ParkingFacility",
-                "name": "Parking Física",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Av. Astrofisico Francisco Sánchez, S/N",
-                  "addressLocality": "San Cristobal de La Laguna",
-                  "addressRegion": "Santa Cruz de Tenerife",
-                  "postalCode": "38206",
-                  "addressCountry": "Spain"
-                },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": "VALOR_LATITUD_PARKING_FISICA",
-                  "longitude": "VALOR_LONGITUD_PARKING_FISICA"
-                },
-                "description": "Información detallada",
-                "aggregateRating": {
-                  "@type": "AggregateRating",
-                  "ratingValue": 4.0,
-                  "reviewCount": 15
-                }
-              }
-            ]
-          }
-        }
-      </script>
-      <!-- Primera seccion -->
-      <h2> Aparcamientos cerca según su ubicación </h2>
-      <article>
-        <h3> Mapa interactivo </h3>
-        <p>  Lista de informacion </p>
-      </article>
-    </section>
-    <!-- Cierre de la pagina -->
+
+    <main>
+      <section>
+        <!-- Título -->
+        <section class="row center-align">
+          <div class="intro col s12">
+            <div class="intro-text">
+              <h2> Aparcamientos cerca según su ubicación </h2>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <!-- Sección 1: Mapa -->
+          <section class="row about">
+            <div class="about-text col s12 m6">
+              <h2> Mapa interactivo </h2>
+              <p>  Lista de informacion </p>
+              <p>  Herramientas </p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <!-- Cierre de la página -->
     <footer>
-      <p> Información de contacto </p>
+      <p>Contáctanos: ejemplo@parkease.com | Teléfono: 123-456-7890</p>
     </footer>
   </body>
 </html>
