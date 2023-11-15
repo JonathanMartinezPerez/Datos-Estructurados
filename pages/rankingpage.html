@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="title" content="Datos estructurados">
+    <meta name="description" content="Práctica datos estructurados">
+    <meta name="keywords" content="HTML5, CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>ParkEase: Ranking</title>
+<script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "ItemList",
+            "name": "Mejores Parkings",
+            "itemListOrder": "http://schema.org/ItemListOrderDescending",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "ParkingFacility",
+                  "name": "Parking ESIT",
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": 4.5,
+                    "reviewCount": 20
+                  },
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Av. Astrofisico Francisco Sánchez, 10",
+                    "addressLocality": "San Cristobal de La Laguna",
+                    "addressRegion": "Santa Cruz de Tenerife",
+                    "postalCode": "38206",
+                    "addressCountry": "Spain"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "28.482835",
+                    "longitude": "-16.321985"
+                  },
+                  "review": [
+                    {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Usuario 1"
+                      },
+                      "reviewBody": "Excelente servicio. Fácil acceso y buena seguridad.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "ParkingFacility",
+                  "name": "Parking Física",
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": 4.0,
+                    "reviewCount": 15
+                  },
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Av. Astrofisico Francisco Sánchez, S/N",
+                    "addressLocality": "San Cristobal de La Laguna",
+                    "addressRegion": "Santa Cruz de Tenerife",
+                    "postalCode": "38206",
+                    "addressCountry": "Spain"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "25.482835",
+                    "longitude": "-18.321985"
+                  },
+                  "review": [
+                    {
+                      "@type": "Review",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Usuario 2"
+                      },
+                      "reviewBody": "Buen servicio, aunque un poco caro.",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": 4
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }        
+        </script>     
+  </head>
+  <body>
+    <!-- Etiqueta para la cabecera -->
+    <header>
+      <h1>ParkEase</h1>
+      <nav class="navigation">
+        <ul class="nav-menu">
+          <li><a href="../pages/index.html">Inicio</a></li>
+          <li><a href="../pages/mappage.html">Mapa</a></li>
+          <li><a href="../pages/rakingpage.html">Ranking</a></li>
+        </ul>
+        <a href="../pages/userpage.html" class="user-icon">Usuario</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <!-- Título -->
+        <section class="row center-align">
+          <div class="intro col s12">
+            <div class="intro-text">
+              <h2> Clasificación de mejores aparcamentos </h2>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <!-- Sección 1: Filtros -->
+          <section class="row about">
+            <div class="about-text col s12 m6">
+              <p>Barra de herramientas de filtros</p>
+              <h2>Ranking de aparcamientos: </h2>
+          
+            </div>
+          </section>
+      
+          <!-- Sección 2: Lista -->
+          <section class="row how-it-works">
+            <div class="how-it-works-text col s12 m6">
+              <h2> Parking Física </h2>
+              <p> Rating e información del mismo </p>
+              <h2> Parking ESIT </h2>
+              <p> Rating e información del mismo </p>  
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <!-- Cierre de la página -->
+    <footer>
+      <p>Contáctanos: ejemplo@parkease.com | Teléfono: 123-456-7890</p>
+    </footer>
+  </body>
+</html>

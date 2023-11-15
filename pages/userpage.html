@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="title" content="Datos estructurados">
+    <meta name="description" content="Práctica datos estructurados">
+    <meta name="keywords" content="HTML5, CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>ParkEase: Profile</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type" : "Person",
+        "name" : "Jonathan Martínez",
+        "givenName" : "Jonathan",
+        "familyName" : "Martínez",
+        "email" : "jmp@parkease.com",
+        "telephone" : "9195555555",
+        "description": "Usuario activo en la aplicación de valoración de parkings. ¡Comparto mis experiencias para ayudar a otros usuarios a encontrar los mejores parkings!",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santa Cruz de Tenerife",
+          "addressRegion": "La Laguna",
+          "postalCode": "35602",
+          "streetAddress": "Calle Parque de la Reina, 12",
+          "addressCountry": "ES"
+        },
+        "mainEntityOfPage": {
+          "@type": "ProfilePage",
+          "@id": "URL del perfil del usuario"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Etiqueta para la cabecera -->
+    <header>
+      <h1>ParkEase</h1>
+      <nav class="navigation">
+        <ul class="nav-menu">
+          <li><a href="../pages/index.html">Inicio</a></li>
+          <li><a href="../pages/mappage.html">Mapa</a></li>
+          <li><a href="../pages/rakingpage.html">Ranking</a></li>
+        </ul>
+        <a href="../pages/userpage.html" class="user-icon">Usuario</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- Título -->
+        <section class="row center-align">
+          <div class="intro col s12">
+            <div class="intro-text">
+              <h2> Perfil del usuario </h2>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <!-- Sección 1: Mapa -->
+          <section class="row about">
+            <div class="about-text col s12 m6">
+              <h2> User </h2>
+              <p>  Lista de informacion </p>        
+            </div>
+          </section>
+        </div>        
+      </section>
+    </main>
+    <!-- Cierre de la página -->
+    <footer>
+      <p>Contáctanos: ejemplo@parkease.com | Teléfono: 123-456-7890</p>
+    </footer>
+  </body>
+</html>
